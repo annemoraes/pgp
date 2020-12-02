@@ -80,7 +80,7 @@ function TeacherList() {
             <div className="profile">
             </div>
             <div className="name">
-              <p>Madson Rodrigues</p>
+              <p>Anne Moraes</p>
               <p className="sub">Fisica</p>
             </div>
           </div>
@@ -120,7 +120,7 @@ function TeacherList() {
             </div>
         </div>
         <div className="chat">
-            <p>Preço/hora <span> R$ 20,00 </span></p>
+            <p>Preço/hora <span> R$ 30,00 </span></p>
             <button type="button">Entrar em contato pelo chat</button>
         </div>
         </div>
@@ -130,7 +130,7 @@ function TeacherList() {
             <div className="profile">
             </div>
             <div className="name">
-              <p>Anne Moraes</p>
+              <p>Madson Rodrigues</p>
               <p className="sub">História</p>
             </div>
           </div>
@@ -170,7 +170,7 @@ function TeacherList() {
             </div>
         </div>
         <div className="chat">
-            <p>Preço/hora <span> R$ 30,00 </span></p>
+            <p>Preço/hora <span> R$ 20,00 </span></p>
             <button type="button">Entrar em contato pelo chat</button>
         </div>
         </div>
