@@ -83,7 +83,7 @@ function TeacherForm() {
             <legend>Seus dados</legend>
             <div className="container-info">
             <Profile/>
-           <p>Anne Ílary de Moraes</p>
+           <p>Madson Rodrigues Liborio</p>
 
             <Input 
               name="whatsapp" 

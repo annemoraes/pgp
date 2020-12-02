@@ -75,9 +75,105 @@ function TeacherList() {
       </PageHeaderForm>
 
       <main>
-        {teachers.map((teacher: Teacher) => {
-          return <TeacherItem key={teacher.id} teacher={teacher} />;
-        })}
+        <div className="container-teacher">
+          <div className="header-teacher">
+            <div className="profile">
+            </div>
+            <div className="name">
+              <p>Madson Rodrigues</p>
+              <p className="sub">Fisica</p>
+            </div>
+          </div>
+          <div className="bio">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet tincidunt tellus. Integer aliquet posuere purus, quis dictum sem pharetra et. Sed a orci facilisis, venenatis quam ut, vestibulum purus. Mauris tincidunt ac ex vu vitae nisl vitae pulvinar. </p>
+          </div>
+          <div className="cards">
+            <div className="hours">
+              <p className="title-card">Dia</p>
+              <p className="title-b">Segunda</p>
+              <p className="title-card">Horario</p>
+              <p className="title-b">8h - 18h</p>
+            </div>
+            <div className="hours">
+              <p className="title-card">Dia</p>
+              <p className="title-b">Terça</p>
+              <p className="title-card">Horario</p>
+              <p className="title-b">8h - 15h</p>
+            </div>
+            <div className="hours">
+              <p className="title-card">Dia</p>
+              <p className="title-b">Quarta</p>
+              <p className="title-card">Horario</p>
+              <p className="title-b">8h - 18h</p>
+            </div>
+            <div className="hours">
+              <p className="title-card">Dia</p>
+              <p className="title-b">Quinta</p>
+              <p className="title-card">Horario</p>
+              <p className="title-b">8h - 18h</p>
+            </div>
+            <div className="hours">
+              <p className="title-card">Dia</p>
+              <p className="title-b">Sexta</p>
+              <p className="title-card">Horario</p>
+              <p className="title-b">8h - 18h</p>
+            </div>
+        </div>
+        <div className="chat">
+            <p>Preço/hora <span> R$ 20,00 </span></p>
+            <button type="button">Entrar em contato pelo chat</button>
+        </div>
+        </div>
+        
+        <div className="container-teacher">
+          <div className="header-teacher">
+            <div className="profile">
+            </div>
+            <div className="name">
+              <p>Anne Moraes</p>
+              <p className="sub">História</p>
+            </div>
+          </div>
+          <div className="bio">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet tincidunt tellus. Integer aliquet posuere purus, quis dictum sem pharetra et. Sed a orci facilisis, venenatis quam ut, vestibulum purus. Mauris tincidunt ac ex vu vitae nisl vitae pulvinar. </p>
+          </div>
+          <div className="cards">
+            <div className="hours">
+              <p className="title-card">Dia</p>
+              <p className="title-b">Segunda</p>
+              <p className="title-card">Horario</p>
+              <p className="title-b">9h - 12h</p>
+            </div>
+            <div className="hours">
+              <p className="title-card">Dia</p>
+              <p className="title-b">Terça</p>
+              <p className="title-card">Horario</p>
+              <p className="title-b">9h - 12h</p>
+            </div>
+            <div className="hours">
+              <p className="title-card">Dia</p>
+              <p className="title-b">Quarta</p>
+              <p className="title-card">Horario</p>
+              <p className="title-b">9h - 12h</p>
+            </div>
+            <div className="hours">
+              <p className="title-card">Dia</p>
+              <p className="title-b">Quinta</p>
+              <p className="title-card">Horario</p>
+              <p className="title-b">8h - 11h</p>
+            </div>
+            <div className="hours">
+              <p className="title-card">Dia</p>
+              <p className="title-b">Sexta</p>
+              <p className="title-card">Horario</p>
+              <p className="title-b">15h - 18h</p>
+            </div>
+        </div>
+        <div className="chat">
+            <p>Preço/hora <span> R$ 30,00 </span></p>
+            <button type="button">Entrar em contato pelo chat</button>
+        </div>
+        </div>
       </main>
     </div>
   )

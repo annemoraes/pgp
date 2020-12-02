@@ -2,6 +2,8 @@ import React from 'react';
 
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
 import api from '../../services/api';
+import Profile from '../../components/Profile';
+
 
 import './styles.css';
 
@@ -15,39 +17,27 @@ export interface Teacher {
   whatsapp: string;
 }
 
-interface TeacherItemProps {
-  teacher: Teacher;
-}
 
-const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
-  function createNewConnection() {
-    api.post('connections', {
-      user_id: teacher.id,
-    })
-  }
-
+function TeacherItem(){
+  
   return (
     <article className="teacher-item">
       <header>
-        <img src={teacher.avatar} alt={teacher.name} />
-        <div>
-          <strong>{teacher.name}</strong>
-          <span>{teacher.subject}</span>
+      <Profile/>        
+      <div>
+          <strong>Madson Rodrigues</strong>
+          <span>Fisica</span>
         </div>
       </header>
 
-      <p>{teacher.bio}</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet tincidunt tellus. Integer aliquet posuere purus, quis dictum sem pharetra et. Sed a orci facilisis, venenatis quam ut, vestibulum purus. Mauris tincidunt ac ex vu vitae nisl vitae pulvinar. </p>
 
       <footer>
         <p>
           Preço/hora
-          <strong>R$ {teacher.cost}</strong>
+          <strong>R$ 20,00</strong>
         </p>
-        <a 
-          target="_blank" 
-          onClick={createNewConnection} 
-          href={`https://wa.me/${teacher.whatsapp}`}
-        >
+        <a>
           <img src={whatsappIcon} alt="Whatsapp" />
           Entrar em contato
         </a>
